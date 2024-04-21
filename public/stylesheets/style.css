@@ -239,20 +239,21 @@ article > img {
 }
 
 .card-main {
-    display: grid;
-    grid-template-columns: repeat(3, 4fr);  /* quantidade de colunas */
-    grid-column-gap: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    margin: 20px;
+    display: inline-block;
+    overflow: hidden;
     border-radius: 20px;
     padding: 19px 20px;
     background-color: #694135;
-    width: 90%;
-    height: 105%;
+    width: 280px;
+    height: 380px;
     cursor: pointer;
     transition: 0.5s;
 }
